@@ -5,8 +5,10 @@ from pandas.core.groupby import categorical
 
     # Categorical : Survived,Sex,Embarked,Pclass,SibSp,Parch
     # Numerical : (continuous)Age , Fare ( discrete)
-    #
-    # lay du liệu train
+    # Mix Type of data: Age, Ticket , Cabin
+    # Contain Errors    : Name
+    # Blank or Null : Cabin > Ticket > Age > Embarked
+# lay du liệu train
 train = pd.read_csv("train.csv")
 test = pd.read_csv("test.csv")
 # biet ten tung columns
@@ -33,3 +35,5 @@ print(train.info())
 print(train.describe())
 #mo ta cai categorical feature value
 print(train.describe(include=['category']))
+# Kiem tra gia tri null in the table
+print(train.isnull().sum())
