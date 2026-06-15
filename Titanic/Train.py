@@ -10,13 +10,10 @@ from pandas.core.groupby import categorical
     # Blank or Null : Cabin > Ticket > Age > Embarked
 # lay du liệu train
 train = pd.read_csv("train.csv")
-test = pd.read_csv("test.csv")
 # biet ten tung columns
 print(train.columns)
-print(test.columns)
 # hien thi nhung the firts row
 print(train.head())
-print(test.head())
 # Gop PassengerID thanh index
 train.set_index(train.PassengerId,inplace=True)
 train.drop("PassengerId",axis=1,inplace=True)
