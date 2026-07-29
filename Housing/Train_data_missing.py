@@ -44,3 +44,5 @@ train['Electrical']= train['Electrical'].fillna(train['Electrical'].mode()[0])
 print('\n')
 missing_final = train.isnull().sum()
 print(missing_final[missing_final > 0].sort_values(ascending=False))
+# lưu dữ liệu
+train.to_csv('../Data Train/Housing/train_cleaned.csv', index=False)
