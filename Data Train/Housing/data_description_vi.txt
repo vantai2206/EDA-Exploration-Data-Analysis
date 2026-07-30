@@ -1,0 +1,469 @@
+MSSubClass: Loại nhà ở liên quan đến giao dịch bán.
+
+        20	1 tầng, xây 1946 trở về sau, mọi kiểu dáng
+        30	1 tầng, xây 1945 trở về trước
+        40	1 tầng, có gác mái đã hoàn thiện, mọi độ tuổi
+        45	1.5 tầng, chưa hoàn thiện, mọi độ tuổi
+        50	1.5 tầng, đã hoàn thiện, mọi độ tuổi
+        60	2 tầng, xây 1946 trở về sau
+        70	2 tầng, xây 1945 trở về trước
+        75	2.5 tầng, mọi độ tuổi
+        80	Nhà chia tầng / nhiều cấp (Split/Multi-level)
+        85	Nhà kiểu Split Foyer
+        90	Nhà song lập (Duplex) - mọi kiểu dáng và độ tuổi
+       120	1 tầng, khu quy hoạch PUD, xây 1946 trở về sau
+       150	1.5 tầng, khu quy hoạch PUD, mọi độ tuổi
+       160	2 tầng, khu quy hoạch PUD, xây 1946 trở về sau
+       180	PUD nhiều cấp - gồm cả Split Level/Foyer
+       190	Nhà chuyển đổi 2 hộ gia đình - mọi kiểu dáng và độ tuổi
+
+MSZoning: Phân loại quy hoạch chung của khu vực bán.
+
+       A	Nông nghiệp
+       C	Thương mại
+       FV	Khu dân cư kiểu làng nổi (Floating Village Residential)
+       I	Công nghiệp
+       RH	Khu dân cư mật độ cao
+       RL	Khu dân cư mật độ thấp
+       RP	Khu dân cư mật độ thấp kiểu công viên
+       RM	Khu dân cư mật độ trung bình
+
+LotFrontage: Chiều dài mặt tiền đất tiếp giáp đường (feet)
+
+LotArea: Diện tích lô đất (feet vuông)
+
+Street: Loại đường tiếp cận khu đất
+
+       Grvl	Đường sỏi
+       Pave	Đường trải nhựa/bê tông
+
+Alley: Loại hẻm/ngõ tiếp cận khu đất
+
+       Grvl	Hẻm sỏi
+       Pave	Hẻm trải nhựa
+       NA 	Không có hẻm tiếp cận
+
+LotShape: Hình dạng tổng thể của khu đất
+
+       Reg	Đều/vuông vắn
+       IR1	Hơi không đều
+       IR2	Không đều vừa
+       IR3	Không đều nhiều
+
+LandContour: Độ bằng phẳng của khu đất
+
+       Lvl	Gần như bằng phẳng
+       Bnk	Có gờ - dốc lên nhanh và rõ từ mặt đường tới nhà
+       HLS	Đồi - dốc rõ rệt từ bên này sang bên kia
+       Low	Trũng/lõm
+
+Utilities: Loại tiện ích sẵn có
+
+       AllPub	Đầy đủ tiện ích công cộng (Điện, Gas, Nước, Cống)
+       NoSewr	Điện, Gas, Nước (bể tự hoại, không có cống công cộng)
+       NoSeWa	Chỉ có Điện và Gas
+       ELO	Chỉ có Điện
+
+LotConfig: Cấu hình lô đất
+
+       Inside	Lô đất nằm bên trong (không góc)
+       Corner	Lô đất góc
+       CulDSac	Lô đất cuối ngõ cụt (Cul-de-sac)
+       FR2	Mặt tiền tiếp giáp 2 phía
+       FR3	Mặt tiền tiếp giáp 3 phía
+
+LandSlope: Độ dốc của khu đất
+
+       Gtl	Dốc thoải
+       Mod	Dốc vừa
+       Sev	Dốc gắt
+
+Neighborhood: Vị trí khu dân cư trong địa giới thành phố Ames
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road (khu gần Sở GTVT & đường sắt)
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	Phía Nam & Tây trường Đại học Iowa State
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+
+Condition1: Mức độ gần các điều kiện xung quanh (đường, đường sắt, công viên...)
+
+       Artery	Giáp đường huyết mạch (arterial street)
+       Feedr	Giáp đường gom (feeder street)
+       Norm	Bình thường
+       RRNn	Trong vòng 200 feet từ đường sắt Bắc-Nam
+       RRAn	Giáp đường sắt Bắc-Nam
+       PosN	Gần khu vực tích cực (công viên, dải cây xanh...)
+       PosA	Giáp khu vực tích cực
+       RRNe	Trong vòng 200 feet từ đường sắt Đông-Tây
+       RRAe	Giáp đường sắt Đông-Tây
+
+Condition2: Mức độ gần các điều kiện xung quanh (nếu có nhiều hơn 1 điều kiện)
+
+       (các giá trị giống hệt Condition1 ở trên)
+
+BldgType: Loại nhà ở
+
+       1Fam	Nhà riêng biệt (Single-family Detached)
+       2FmCon	Nhà chuyển đổi 2 hộ; vốn xây làm nhà 1 hộ
+       Duplx	Nhà song lập (Duplex)
+       TwnhsE	Nhà liền kề, căn đầu dãy (Townhouse End Unit)
+       TwnhsI	Nhà liền kề, căn giữa dãy (Townhouse Inside Unit)
+
+HouseStyle: Kiểu dáng nhà
+
+       1Story	1 tầng
+       1.5Fin	1.5 tầng, tầng lửng đã hoàn thiện
+       1.5Unf	1.5 tầng, tầng lửng chưa hoàn thiện
+       2Story	2 tầng
+       2.5Fin	2.5 tầng, tầng lửng đã hoàn thiện
+       2.5Unf	2.5 tầng, tầng lửng chưa hoàn thiện
+       SFoyer	Kiểu Split Foyer
+       SLvl	Kiểu Split Level
+
+OverallQual: Đánh giá chất lượng vật liệu và hoàn thiện tổng thể của căn nhà (thang 1-10)
+
+       10	Rất xuất sắc
+       9	Xuất sắc
+       8	Rất tốt
+       7	Tốt
+       6	Trên trung bình
+       5	Trung bình
+       4	Dưới trung bình
+       3	Khá
+       2	Kém
+       1	Rất kém
+
+OverallCond: Đánh giá tình trạng tổng thể của căn nhà (thang 1-10, thang điểm giống OverallQual)
+
+YearBuilt: Năm xây dựng gốc
+
+YearRemodAdd: Năm cải tạo/sửa chữa (bằng năm xây nếu không cải tạo/mở rộng gì)
+
+RoofStyle: Kiểu mái nhà
+
+       Flat	Mái bằng
+       Gable	Mái chữ A (Gable)
+       Gambrel	Mái kiểu chuồng ngựa (Gambrel/Barn)
+       Hip	Mái bốn dốc (Hip)
+       Mansard	Mái Mansard
+       Shed	Mái lệch một phía (Shed)
+
+RoofMatl: Vật liệu mái
+
+       ClyTile	Ngói đất sét
+       CompShg	Tấm lợp Composite (tiêu chuẩn)
+       Membran	Màng chống thấm (Membrane)
+       Metal	Kim loại
+       Roll	Tấm cuộn (Roll)
+       Tar&Grv	Nhựa đường & sỏi
+       WdShake	Ván lợp gỗ chẻ (Wood Shakes)
+       WdShngl	Ván lợp gỗ (Wood Shingles)
+
+Exterior1st: Vật liệu ốp ngoài của nhà (lớp chính)
+
+       AsbShng	Tấm lợp Amiăng
+       AsphShn	Tấm lợp Asphalt
+       BrkComm	Gạch thường
+       BrkFace	Gạch ốp mặt
+       CBlock	Gạch bê tông (Cinder Block)
+       CemntBd	Tấm xi măng (Cement Board)
+       HdBoard	Ván ép cứng (Hard Board)
+       ImStucc	Vữa trát giả (Imitation Stucco)
+       MetalSd	Tấm ốp kim loại
+       Other	Khác
+       Plywood	Ván ép (Plywood)
+       PreCast	Bê tông đúc sẵn
+       Stone	Đá
+       Stucco	Vữa trát (Stucco)
+       VinylSd	Tấm ốp Vinyl
+       Wd Sdng	Tấm ốp gỗ
+       WdShing	Ván lợp gỗ
+
+Exterior2nd: Vật liệu ốp ngoài của nhà (lớp thứ 2, nếu có nhiều hơn 1 loại)
+
+       (các giá trị giống hệt Exterior1st ở trên)
+
+MasVnrType: Loại đá/gạch ốp trang trí (Masonry veneer)
+
+       BrkCmn	Gạch thường
+       BrkFace	Gạch ốp mặt
+       CBlock	Gạch bê tông
+       None	Không có
+       Stone	Đá
+
+MasVnrArea: Diện tích đá/gạch ốp trang trí (feet vuông)
+
+ExterQual: Đánh giá chất lượng vật liệu mặt ngoài
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Trung bình/Điển hình
+       Fa	Khá
+       Po	Kém
+
+ExterCond: Đánh giá tình trạng hiện tại của vật liệu mặt ngoài (thang điểm giống ExterQual)
+
+Foundation: Loại móng nhà
+
+       BrkTil	Gạch & ngói
+       CBlock	Gạch bê tông
+       PConc	Bê tông đổ (Poured Concrete)
+       Slab	Móng bè (Slab)
+       Stone	Đá
+       Wood	Gỗ
+
+BsmtQual: Đánh giá chiều cao tầng hầm
+
+       Ex	Xuất sắc (từ 100 inch trở lên)
+       Gd	Tốt (90-99 inch)
+       TA	Điển hình (80-89 inch)
+       Fa	Khá (70-79 inch)
+       Po	Kém (dưới 70 inch)
+       NA	Không có tầng hầm
+
+BsmtCond: Đánh giá tình trạng chung của tầng hầm
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Điển hình - cho phép hơi ẩm nhẹ
+       Fa	Khá - có ẩm, hoặc nứt/lún nhẹ
+       Po	Kém - nứt/lún/ẩm nghiêm trọng
+       NA	Không có tầng hầm
+
+BsmtExposure: Mức độ lộ sáng của tầng hầm (tường có lối ra vườn/mặt đất)
+
+       Gd	Lộ sáng tốt
+       Av	Lộ sáng trung bình (nhà kiểu split thường ở mức này trở lên)
+       Mn	Lộ sáng tối thiểu
+       No	Không lộ sáng
+       NA	Không có tầng hầm
+
+BsmtFinType1: Xếp hạng khu vực đã hoàn thiện trong tầng hầm (loại 1)
+
+       GLQ	Không gian sống tốt (Good Living Quarters)
+       ALQ	Không gian sống khá (Average Living Quarters)
+       BLQ	Không gian sống dưới trung bình
+       Rec	Phòng giải trí trung bình (Rec Room)
+       LwQ	Chất lượng thấp
+       Unf	Chưa hoàn thiện
+       NA	Không có tầng hầm
+
+BsmtFinSF1: Diện tích đã hoàn thiện loại 1 (feet vuông)
+
+BsmtFinType2: Xếp hạng khu vực đã hoàn thiện trong tầng hầm (loại 2, nếu có nhiều loại)
+
+       (các giá trị giống hệt BsmtFinType1 ở trên)
+
+BsmtFinSF2: Diện tích đã hoàn thiện loại 2 (feet vuông)
+
+BsmtUnfSF: Diện tích tầng hầm chưa hoàn thiện (feet vuông)
+
+TotalBsmtSF: Tổng diện tích tầng hầm (feet vuông)
+
+Heating: Loại hệ thống sưởi
+
+       Floor	Lò sưởi sàn
+       GasA	Lò sưởi khí gas, thổi khí nóng cưỡng bức
+       GasW	Lò sưởi khí gas, dùng nước nóng/hơi nước
+       Grav	Lò sưởi đối lưu tự nhiên (Gravity furnace)
+       OthW	Nước nóng/hơi nước, nguồn khác ngoài gas
+       Wall	Lò sưởi gắn tường
+
+HeatingQC: Chất lượng và tình trạng hệ thống sưởi
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Trung bình/Điển hình
+       Fa	Khá
+       Po	Kém
+
+CentralAir: Có điều hòa trung tâm hay không
+
+       N	Không
+       Y	Có
+
+Electrical: Hệ thống điện
+
+       SBrkr	Cầu dao tiêu chuẩn & dây Romex
+       FuseA	Hộp cầu chì trên 60 AMP, toàn bộ dây Romex (Khá tốt)
+       FuseF	Hộp cầu chì 60 AMP, chủ yếu dây Romex (Khá)
+       FuseP	Hộp cầu chì 60 AMP, chủ yếu dây kiểu cũ knob & tube (Kém)
+       Mix	Hỗn hợp nhiều loại
+
+1stFlrSF: Diện tích tầng 1 (feet vuông)
+
+2ndFlrSF: Diện tích tầng 2 (feet vuông)
+
+LowQualFinSF: Diện tích hoàn thiện chất lượng thấp (tính tất cả các tầng)
+
+GrLivArea: Diện tích sinh hoạt trên mặt đất (feet vuông)
+
+BsmtFullBath: Số phòng tắm đầy đủ ở tầng hầm
+
+BsmtHalfBath: Số phòng tắm nhỏ (half bath) ở tầng hầm
+
+FullBath: Số phòng tắm đầy đủ trên mặt đất
+
+HalfBath: Số phòng tắm nhỏ trên mặt đất
+
+Bedroom: Số phòng ngủ trên mặt đất (KHÔNG tính phòng ngủ trong tầng hầm)
+
+Kitchen: Số phòng bếp trên mặt đất
+
+KitchenQual: Chất lượng phòng bếp
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Điển hình/Trung bình
+       Fa	Khá
+       Po	Kém
+
+TotRmsAbvGrd: Tổng số phòng trên mặt đất (không tính phòng tắm)
+
+Functional: Mức độ hoạt động/công năng của nhà (mặc định là bình thường trừ khi có lý do trừ điểm)
+
+       Typ	Công năng điển hình
+       Min1	Trừ điểm nhẹ 1
+       Min2	Trừ điểm nhẹ 2
+       Mod	Trừ điểm vừa
+       Maj1	Trừ điểm nặng 1
+       Maj2	Trừ điểm nặng 2
+       Sev	Hư hỏng nghiêm trọng
+       Sal	Chỉ còn giá trị thanh lý
+
+Fireplaces: Số lò sưởi (lò sưởi đốt/trang trí trong nhà)
+
+FireplaceQu: Chất lượng lò sưởi
+
+       Ex	Xuất sắc - lò sưởi xây gạch đặc biệt
+       Gd	Tốt - lò sưởi xây gạch ở tầng chính
+       TA	Trung bình - lò sưởi đúc sẵn ở khu sinh hoạt chính, hoặc lò xây gạch ở tầng hầm
+       Fa	Khá - lò sưởi đúc sẵn ở tầng hầm
+       Po	Kém - kiểu lò Ben Franklin Stove
+       NA	Không có lò sưởi
+
+GarageType: Vị trí nhà để xe (garage)
+
+       2Types	Nhiều hơn 1 loại garage
+       Attchd	Gắn liền với nhà
+       Basment	Garage trong tầng hầm
+       BuiltIn	Xây liền trong nhà (thường có phòng phía trên garage)
+       CarPort	Mái che xe (không kín như garage)
+       Detchd	Tách biệt khỏi nhà
+       NA	Không có garage
+
+GarageYrBlt: Năm xây garage
+
+GarageFinish: Mức độ hoàn thiện nội thất garage
+
+       Fin	Đã hoàn thiện
+       RFn	Hoàn thiện thô
+       Unf	Chưa hoàn thiện
+       NA	Không có garage
+
+GarageCars: Sức chứa garage tính theo số xe
+
+GarageArea: Diện tích garage (feet vuông)
+
+GarageQual: Chất lượng garage
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Điển hình/Trung bình
+       Fa	Khá
+       Po	Kém
+       NA	Không có garage
+
+GarageCond: Tình trạng garage (thang điểm giống GarageQual)
+
+PavedDrive: Lối xe vào có trải nhựa/bê tông không
+
+       Y	Có trải nhựa
+       P	Trải nhựa một phần
+       N	Đất/sỏi
+
+WoodDeckSF: Diện tích sàn gỗ ngoài trời (feet vuông)
+
+OpenPorchSF: Diện tích hiên/hành lang hở (feet vuông)
+
+EnclosedPorch: Diện tích hiên/hành lang có che kín (feet vuông)
+
+3SsnPorch: Diện tích hiên dùng được 3 mùa trong năm (feet vuông)
+
+ScreenPorch: Diện tích hiên có lưới chắn côn trùng (feet vuông)
+
+PoolArea: Diện tích hồ bơi (feet vuông)
+
+PoolQC: Chất lượng hồ bơi
+
+       Ex	Xuất sắc
+       Gd	Tốt
+       TA	Trung bình/Điển hình
+       Fa	Khá
+       NA	Không có hồ bơi
+
+Fence: Chất lượng hàng rào
+
+       GdPrv	Riêng tư tốt (Good Privacy)
+       MnPrv	Riêng tư tối thiểu (Minimum Privacy)
+       GdWo	Gỗ tốt (Good Wood)
+       MnWw	Gỗ/dây kẽm tối thiểu (Minimum Wood/Wire)
+       NA	Không có hàng rào
+
+MiscFeature: Đặc điểm khác không thuộc các nhóm trên
+
+       Elev	Thang máy
+       Gar2	Garage thứ 2 (nếu chưa mô tả ở phần garage)
+       Othr	Khác
+       Shed	Nhà kho (trên 100 feet vuông)
+       TenC	Sân tennis
+       NA	Không có
+
+MiscVal: Giá trị ($) của đặc điểm khác (MiscFeature)
+
+MoSold: Tháng bán (MM)
+
+YrSold: Năm bán (YYYY)
+
+SaleType: Loại giao dịch bán
+
+       WD 	Chứng thư bảo đảm - thông thường (Warranty Deed - Conventional)
+       CWD	Chứng thư bảo đảm - trả tiền mặt
+       VWD	Chứng thư bảo đảm - vay VA Loan
+       New	Nhà mới xây và bán ngay
+       COD	Chứng thư do tòa án/di sản chỉ định
+       Con	Hợp đồng, trả trước 15%, điều khoản thường
+       ConLw	Hợp đồng, trả trước thấp, lãi suất thấp
+       ConLI	Hợp đồng, lãi suất thấp
+       ConLD	Hợp đồng, trả trước thấp
+       Oth	Khác
+
+SaleCondition: Điều kiện bán
+
+       Normal	Bán bình thường
+       Abnorml	Bán bất thường - trao đổi, xiết nợ, bán gấp (short sale)
+       AdjLand	Mua thêm đất liền kề
+       Alloca	Phân chia - 2 bất động sản có sổ riêng liên kết nhau, thường là căn hộ kèm garage
+       Family	Bán giữa các thành viên trong gia đình
+       Partial	Nhà chưa hoàn thiện tại thời điểm định giá gần nhất (thường gắn với nhà mới xây)
